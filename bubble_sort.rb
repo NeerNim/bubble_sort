@@ -1,20 +1,20 @@
-def swap(arr, a, b)
-  arr[a], arr[b] = arr[b], arr[a]
+def swap(arr, first, second)
+  arr[first], arr[second] = arr[second], arr[first]
 end
 
-def bubble_sort(arr)  
+def bubble_sort(arr)
   n = arr.length
-  until n <= 1 
-  newn = 0
-  for i in 1..n-1
+  until n <= 1
+    newn = 0
+  for i in 1..n - 1 
     if arr[i - 1] > arr[i]
       swap(arr, i - 1, i)
       newn = i
-    end      
+    end
   end
   n = newn
   end
-  return arr
+  arr
 end
 
-puts bubble_sort([5,3,7,6])
+puts bubble_sort([5, 3, 7, 6])
