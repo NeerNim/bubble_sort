@@ -3,6 +3,7 @@
 def swap(arr, first, second)
   arr[first], arr[second] = arr[second], arr[first]
 end
+
 def bubble_sort(arr)
   n = arr.length
   until n <= 1
