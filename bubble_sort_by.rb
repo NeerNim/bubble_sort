@@ -1,7 +1,8 @@
-def swap(arr, first, second)
-  arr[first], arr[second]= arr[second], arr[first]
-end
+# frozen_string_literal: true
 
+def swap(arr, first, second)
+  arr[first], arr[second] = arr[second], arr[first]
+end
 
 def bubble_sort_by(arr)
   n = arr.length
@@ -19,6 +20,6 @@ def bubble_sort_by(arr)
   arr
 end
 
-bubble_sort_by(["hi", "hello", "hey"]) do |left, right|
-    left.length - right.length
+bubble_sort_by(%w[hi hello hey]) do |left, right|
+  left.length - right.length
 end
